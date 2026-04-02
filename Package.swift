@@ -37,6 +37,6 @@ let package = Package(
     ],
     targets: [
         .target(name: "LGSideMenuController",
-                path: "LGSideMenuController")
+                path: "Sources/LGSideMenuController")
     ]
 )
