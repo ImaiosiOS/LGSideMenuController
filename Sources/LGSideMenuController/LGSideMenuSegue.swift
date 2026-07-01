@@ -43,7 +43,7 @@ public final class LGSideMenuSegue: UIStoryboardSegue {
             assert(false, "LGSideMenuSegue must have source as LGSideMenuController") 
             return
         }
-
+        let sideMenuController = self.source as! LGSideMenuController
         switch identifier {
         case Identifier.root:
             sideMenuController.rootViewController = destination
