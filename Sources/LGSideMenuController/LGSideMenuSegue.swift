@@ -39,8 +39,8 @@ public final class LGSideMenuSegue: UIStoryboardSegue {
     }
 
     public override func perform() {
-        guard let sideMenuController = self.source as? LGSideMenuController else {
-            assert(false, "LGSideMenuSegue must have source as LGSideMenuController")
+        guard self.source is LGSideMenuController else {
+            assert(false, "LGSideMenuSegue must have source as LGSideMenuController") 
             return
         }
 
